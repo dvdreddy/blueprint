@@ -13,24 +13,24 @@ $pt-intent-colors: (
 ) !default;
 
 $pt-intent-text-colors: (
-  "primary": $blue2,
-  "success": $green2,
-  "warning": $orange2,
-  "danger" : $red2,
+  "primary": $primary2,
+  "success": $success2,
+  "warning": $warning2,
+  "danger" : $danger2,
 ) !default;
 
 $pt-intent-active-text-colors: (
-  "primary": $blue1,
-  "success": $green1,
-  "warning": $orange1,
-  "danger": $red1
+  "primary": $primary1,
+  "success": $success1,
+  "warning": $warning1,
+  "danger": $danger1,
 ) !default;
 
 $pt-dark-intent-text-colors: (
-  "primary": $blue5,
-  "success": $green5,
-  "warning": $orange5,
-  "danger" : $red5,
+  "primary": $primary5,
+  "success": $success5,
+  "warning": $warning5,
+  "danger" : $danger5,
 ) !default;
 
 @mixin intent-color($intentName) {
@@ -60,7 +60,7 @@ $pt-dark-intent-text-colors: (
 
 @mixin heading-typography() {
   color: $pt-heading-color;
-  font-weight: 600;
+  font-weight: 700;
 
   .#{$ns}-dark & {
     color: $pt-dark-heading-color;

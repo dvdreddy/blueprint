@@ -23,11 +23,9 @@ CSS `border` property issues:
 `box-shadow` doesn't have these issues, we're using it instead of `border`.
 */
 $button-box-shadow:
-  inset 0 0 0 $button-border-width rgba($black, 0.2),
-  0 1px 2px rgba($black, 0.1) !default;
+  inset 0 0 0 $button-border-width $gray4 !default;
 $button-box-shadow-active:
-  inset 0 0 0 $button-border-width rgba($black, 0.2),
-  0 1px 2px rgba($black, 0.2) !default;
+    inset 0 0 0 $button-border-width $gray2 !default;
 
 $dark-button-box-shadow:
   inset 0 0 0 $button-border-width rgba($white, 0.1),
@@ -37,11 +35,11 @@ $dark-button-box-shadow-active:
   0 1px 2px rgba($black, 0.4) !default;
 
 $button-color-disabled: $pt-text-color-disabled !default;
-$button-background-color: $light-gray5 !default;
-$button-background-color-hover: $light-gray4 !default;
-$button-background-color-active: $light-gray2 !default;
-$button-background-color-disabled: rgba($light-gray1, 0.5) !default;
-$button-background-color-active-disabled: rgba($light-gray1, 0.7) !default;
+$button-background-color: $light-gray4 !default;
+$button-background-color-hover: $light-gray2 !default;
+$button-background-color-active: $light-gray1 !default;
+$button-background-color-disabled: $light-gray3 !default;
+$button-background-color-active-disabled: $light-gray2 !default;
 $button-intent-color-disabled: rgba($white, 0.6);
 $dark-button-color-disabled: $pt-dark-text-color-disabled !default;
 $dark-button-background-color: $dark-gray4 !default;
@@ -53,8 +51,8 @@ $dark-button-intent-color-disabled: rgba($white, 0.3);
 
 $minimal-button-divider-width: 1px !default;
 $minimal-button-background-color: none !default;
-$minimal-button-background-color-hover: rgba($gray3, 0.15) !default;
-$minimal-button-background-color-active: rgba($gray3, 0.3) !default;
+$minimal-button-background-color-hover: $light-gray2 !default;
+$minimal-button-background-color-active: $light-gray1 !default;
 $dark-minimal-button-background-color: none !default;
 $dark-minimal-button-background-color-hover: rgba($gray3, 0.15) !default;
 $dark-minimal-button-background-color-active: rgba($gray3, 0.3) !default;
@@ -65,10 +63,10 @@ $button-outlined-border-disabled-intent-opacity: 0.2 !default;
 
 // "intent": (default, hover, active colors)
 $button-intents: (
-  "primary": ($blue3, $blue2, $blue1),
-  "success": ($green3, $green2, $green1),
-  "warning": ($orange3, $orange2, $orange1),
-  "danger": ($red3, $red2, $red1)
+  "primary": ($primary3, $primary2, $primary1),
+  "success": ($success3, $success2, $success1),
+  "warning": ($warning3, $warning2, $warning1),
+  "danger": ($danger3, $danger2, $danger1)
 ) !default;
 
 @mixin pt-button-layout() {

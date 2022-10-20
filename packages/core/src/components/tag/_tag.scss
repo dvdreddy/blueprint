@@ -38,17 +38,17 @@ Styleguide tag
 */
 
 $tag-intent-colors: (
-  "primary": ($pt-intent-primary, $blue2, $blue1, $white),
-  "success": ($pt-intent-success, $green2, $green1, $white),
-  "warning": ($orange5, $orange4, $orange3, $pt-text-color),
-  "danger": ($pt-intent-danger, $red2, $red1, $white)
+  "primary": ($pt-intent-primary, $primary2, $primary1, $white),
+  "success": ($pt-intent-success, $success2, $success1, $white),
+  "warning": ($pt-intent-warning, $warning2, $warning1, $pt-text-color),
+  "danger": ($pt-intent-danger, $danger2, $danger1, $white)
 ) !default;
 
 $minimal-tag-intent-colors: (
-  "primary": ($pt-intent-primary, $blue2, $blue1),
-  "success": ($pt-intent-success, $green2, $green1),
-  "warning": ($pt-intent-warning, $orange2, $orange1),
-  "danger": ($pt-intent-danger, $red2, $red1)
+  "primary": ($pt-intent-primary, $primary2, $primary1),
+  "success": ($pt-intent-success, $success2, $success1),
+  "warning": ($pt-intent-warning, $warning2, $warning1),
+  "danger": ($pt-intent-danger, $danger2, $danger1)
 ) !default;
 
 $minimal-dark-tag-intent-colors: (
