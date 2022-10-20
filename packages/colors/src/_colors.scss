@@ -7,25 +7,25 @@
 
 // Gray scale
 
-$black: #111418 !default;
+$black: #00130c !default;
 
-$dark-gray1: #1c2127 !default;
-$dark-gray2: #252a31 !default;
-$dark-gray3: #2f343c !default;
-$dark-gray4: #383e47 !default;
-$dark-gray5: #404854 !default;
+$dark-gray1: #002618 !default;
+$dark-gray2: #1C2F29 !default;
+$dark-gray3: #333F3b !default;
+$dark-gray4: #4d5754 !default;
+$dark-gray5: #666f6c !default;
 
-$gray1: #5f6b7c !default;
-$gray2: #738091 !default;
-$gray3: #8f99a8 !default;
-$gray4: #abb3bf !default;
-$gray5: #c5cbd3 !default;
+$gray1: #808785 !default;
+$gray2: #999f9d !default;
+$gray3: #b3b7b6 !default;
+$gray4: #cccfce !default;
+$gray5: #e6e7e7 !default;
 
-$light-gray1: #d3d8de !default;
-$light-gray2: #dce0e5 !default;
-$light-gray3: #e5e8eb !default;
-$light-gray4: #edeff2 !default;
-$light-gray5: #f6f7f9 !default;
+$light-gray1: #EDEFF2 !default;
+$light-gray2: #f2f4f6 !default;
+$light-gray3: #f6f7f9 !default;
+$light-gray4: #FAFAFB !default;
+$light-gray5: #FDFDFD !default;
 
 $white: #ffffff !default;
 
@@ -116,3 +116,29 @@ $sepia2: #7a542e !default;
 $sepia3: #946638 !default;
 $sepia4: #af855a !default;
 $sepia5: #d0b090 !default;
+
+
+// Oliv specific
+$primary1: #03431B !default;
+$primary2: #05531B !default;
+$primary3: #0A7415 !default;
+$primary4: #3b9044 !default;
+$primary5: #6cac73 !default;
+
+$danger1: #8C163D !default;
+$danger2: #AE2445 !default;
+$danger3: #F24852 !default;
+$danger4: #f56d75 !default;
+$danger5: #f79197 !default;
+
+$success1: #2C7406 !default;
+$success2: #3F9009 !default;
+$success3: #0A7415 !default;
+$success4: #8bd442 !default;
+$success5: #a8df71 !default;
+
+$warning1: #B77A05 !default;
+$warning2: #DB9907 !default;
+$warning3: #FFBA0A !default;
+$warning4: #ffc83b !default;
+$warning5: #ffd66c !default;

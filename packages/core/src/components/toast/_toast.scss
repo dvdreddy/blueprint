@@ -10,10 +10,10 @@ $toast-max-width: $pt-grid-size * 50 !default;
 $toast-margin: $pt-grid-size * 2 !default;
 
 $toast-intent-colors: (
-  "primary": ($pt-intent-primary, $white, $blue2, $blue1),
-  "success": ($pt-intent-success, $white, $green2, $green1),
-  "warning": ($orange5, $dark-gray1, $orange4, $orange3),
-  "danger": ($pt-intent-danger, $white, $red2, $red1),
+  "primary": ($pt-intent-primary, $white, $primary2, $primary1),
+  "success": ($pt-intent-success, $white, $success2, $success1),
+  "warning": ($pt-intent-warning, $white, $warning2, $warning1),
+  "danger": ($pt-intent-danger, $white, $danger2, $danger1),
 ) !default;
 
 @mixin pt-toast-intent(
