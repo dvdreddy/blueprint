@@ -142,9 +142,9 @@ $tag-round-adjustment: 2px !default;
   }
 
   &:not([class*="#{$ns}-intent-"]) {
-    @include pt-tag-minimal-interactive($gray3, $black);
+    @include pt-tag-minimal-interactive($light-gray2, $light-gray1, $black);
 
-    background-color: rgba($gray3, 0.15);
+    background-color: $light-gray3;
     color: $pt-text-color;
 
     .#{$ns}-tag-remove {
@@ -157,7 +157,7 @@ $tag-round-adjustment: 2px !default;
     }
 
     .#{$ns}-dark & {
-      @include pt-tag-minimal-interactive($gray3, $white);
+      @include pt-tag-minimal-interactive($gray2, $gray1, $white);
 
       background-color: rgba($gray3, 0.15);
       color: $pt-dark-text-color;
@@ -174,18 +174,18 @@ $tag-round-adjustment: 2px !default;
   }
 }
 
-@mixin pt-tag-minimal-interactive($background-color, $text-color) {
+@mixin pt-tag-minimal-interactive($hover-color, $active-color, $text-color) {
   &.#{$ns}-interactive {
     cursor: pointer;
 
     &:hover {
-      background-color: rgba($background-color, 0.3);
+      background-color: $hover-color;
       color: $text-color;
     }
 
     &.#{$ns}-active,
     &:active {
-      background-color: rgba($background-color, 0.35);
+      background-color: $active-color;
       color: $text-color;
     }
   }

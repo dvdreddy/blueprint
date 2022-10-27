@@ -41,9 +41,12 @@ $dark-elevation-shadows: (
   $pt-dark-elevation-shadow-4
 );
 
+
+$pt-card-border-radius: 8px;
+
 .#{$ns}-card {
   background-color: $card-background-color;
-  border-radius: $pt-border-radius;
+  border-radius: $pt-card-border-radius;
   box-shadow: $pt-elevation-shadow-0;
   padding: $card-padding;
   transition: transform ($pt-transition-duration * 2) $pt-transition-ease,

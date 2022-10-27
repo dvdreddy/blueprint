@@ -377,7 +377,7 @@ $control-indicator-spacing: $pt-grid-size !default;
   $switch-checked-background-color: $control-checked-background-color !default;
   $switch-checked-background-color-hover: $control-checked-background-color-hover !default;
   $switch-checked-background-color-active: $control-checked-background-color-active !default;
-  $switch-checked-background-color-disabled: rgba($blue3, 0.5) !default;
+  $switch-checked-background-color-disabled: $control-checked-background-color-disabled !default;
 
   $dark-switch-text-color: $pt-dark-text-color !default;
   $dark-switch-text-color-disabled: $pt-dark-text-color-disabled !default;

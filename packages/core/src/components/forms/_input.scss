@@ -48,7 +48,7 @@ Styleguide input
       @include pt-input-intent($color);
 
       .#{$ns}-dark & {
-        @include pt-dark-input-intent(map-get($pt-dark-input-intent-box-shadow-colors, $intent));
+        @include pt-dark-input-intent(map-get($pt-dark-input-intent-box-shadow-colors, $intent))
       }
     }
   }
@@ -95,7 +95,7 @@ Styleguide input-search
 Textareas
 
 Markup:
-<textarea class="#{$ns}-input {{.modifier}}" {{:modifier}} dir="auto"></textarea>
+<textarea class="#{$ns}-input {{.modifier}}" {{:modifier}} placeholder="add text" dir="auto"></textarea>
 
 :disabled - Disabled
 :readonly - Readonly
@@ -112,6 +112,7 @@ Styleguide textarea
 textarea.#{$ns}-input {
   max-width: 100%;
   padding: $input-padding-horizontal;
+  border-radius: $pt-border-radius * 2;
 
   &,
   &.#{$ns}-large,
