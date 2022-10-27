@@ -30,10 +30,10 @@ $menu-item-color-hover: rgba($gray3, 0.15) !default;
 $menu-item-color-active: rgba($gray3, 0.3) !default;
 
 $menu-item-intent-colors: (
-  "primary": (/* bg */ $blue3, /* fg */ $blue2, /* fg active */ $blue1),
-  "success": (/* bg */ $green3, /* fg */ $green2, /* fg active */ $green1),
-  "warning": (/* bg */ $orange3, /* fg */ $orange2, /* fg active */ $orange1),
-  "danger": (/* bg */ $red3, /* fg */ $red2, /* fg active */ $red1),
+  "primary": (/* bg */ $primary3, /* fg */ $primary2, /* fg active */ $primary1),
+  "success": (/* bg */ $success3, /* fg */ $success2, /* fg active */ $success1),
+  "warning": (/* bg */ $warning3, /* fg */ $warning2, /* fg active */ $warning1),
+  "danger": (/* bg */ $danger3, /* fg */ $danger2, /* fg active */ $danger1),
 ) !default;
 
 $dark-menu-item-intent-colors: (

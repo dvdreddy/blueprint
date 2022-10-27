@@ -40,7 +40,10 @@ export class TextExample extends React.PureComponent<ExampleProps, ITextExampleS
                     {this.state.textContent}
                     &nbsp;
                 </Text>
-                <TextArea fill={true} onChange={this.onInputChange} value={this.state.textContent} />
+                <TextArea
+                    fill={true}
+                    onChange={this.onInputChange}
+                    value={this.state.textContent} />
             </Example>
         );
     }

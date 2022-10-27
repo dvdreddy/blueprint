@@ -55,7 +55,7 @@ $pt-dark-intent-text-colors: (
 
 @mixin running-typography() {
   font-size: $pt-font-size;
-  line-height: 1.5;
+  line-height: $pt-line-height;
 }
 
 @mixin heading-typography() {
