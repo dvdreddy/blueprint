@@ -60,7 +60,7 @@ $pt-dark-intent-text-colors: (
 
 @mixin heading-typography() {
   color: $pt-heading-color;
-  font-weight: 700;
+  font-weight: 500;
 
   .#{$ns}-dark & {
     color: $pt-dark-heading-color;

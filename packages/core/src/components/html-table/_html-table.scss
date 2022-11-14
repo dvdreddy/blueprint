@@ -124,7 +124,7 @@ table.#{$ns}-html-table {
 
   &.#{$ns}-html-table-striped {
     tbody tr:nth-child(odd) td {
-      background: rgba($gray3, 0.15);
+      background: rgba($gray5, 0.6);
     }
   }
 

@@ -123,16 +123,16 @@ $header-margin: ($header-height - $pt-input-height) * 0.5 !default;
     }
 
     &.DayPicker-Day--selected {
-      background-color: $blue3;
+      background-color: $primary3;
       border-radius: $pt-border-radius;
       color: $white;
 
       &:hover {
-        background-color: $blue2;
+        background-color: $primary2;
       }
 
       &:active {
-        background-color: $blue1;
+        background-color: $primary1;
       }
     }
 
@@ -245,14 +245,14 @@ $header-margin: ($header-height - $pt-input-height) * 0.5 !default;
     }
 
     &.DayPicker-Day--selected {
-      background-color: $blue3;
+      background-color: $primary3;
 
       &:hover {
-        background-color: $blue2;
+        background-color: $primary2;
       }
 
       &:active {
-        background-color: $blue1;
+        background-color: $primary1;
       }
     }
 
