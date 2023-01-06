@@ -79,7 +79,7 @@ $input-button-height-small: $pt-button-height-smaller !default;
   .#{$ns}-button {
     @include pt-button-height($input-button-height);
     margin: ($pt-input-height - $input-button-height) * 0.5;
-    padding: $button-padding-small;
+    padding: $comp-padding-small;
 
     // icons CSS API support
     &:empty { padding: 0; }

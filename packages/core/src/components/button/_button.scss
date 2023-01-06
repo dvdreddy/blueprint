@@ -76,12 +76,40 @@ Styleguide button
   // size modifiers
   &.#{$ns}-large,
   .#{$ns}-large & {
-    @include pt-button-height-large();
+      @include pt-button-height-large();
+
+      // TODO(dvd): Move to mixins
+        // button with SVG icon only (no text or children)
+      .#{$ns}-icon:first-child:last-child,
+      // if loading, then it contains exactly [spinner, icon]
+      .#{$ns}-spinner + .#{$ns}-icon:last-child {
+          // center icon horizontally. this works for large buttons too.
+          // margin: 0 (-($pt-button-height - $pt-icon-size-standard) * 0.5);
+          padding: 10px;
+
+      }
+
+      &[class*="#{$ns}-icon-"] {
+          &::before {
+              @include pt-icon($pt-icon-size-large);
+          }
+      }
   }
 
   &.#{$ns}-small,
   .#{$ns}-small & {
-    @include pt-button-height-small();
+      @include pt-button-height-small();
+
+        // button with SVG icon only (no text or children)
+      .#{$ns}-icon:first-child:last-child,
+      // if loading, then it contains exactly [spinner, icon]
+      .#{$ns}-spinner + .#{$ns}-icon:last-child {
+          // center icon horizontally. this works for large buttons too.
+          // margin: 0 (-($pt-button-height - $pt-icon-size-standard) * 0.5);
+          padding: 4px;
+
+      }
+
   }
 
   // loading state
@@ -115,7 +143,7 @@ Styleguide button
     color: $pt-icon-color;
 
     &.#{$ns}-align-right {
-      margin-left: $button-icon-spacing;
+      margin-left: $comp-icon-spacing;
     }
   }
 
@@ -124,7 +152,9 @@ Styleguide button
   // if loading, then it contains exactly [spinner, icon]
   .#{$ns}-spinner + .#{$ns}-icon:last-child {
     // center icon horizontally. this works for large buttons too.
-    margin: 0 (-($pt-button-height - $pt-icon-size-standard) * 0.5);
+    // margin: 0 (-($pt-button-height - $pt-icon-size-standard) * 0.5);
+   padding: 7px;
+
   }
 
   // dark theme

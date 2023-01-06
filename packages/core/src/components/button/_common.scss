@@ -7,11 +7,7 @@
 @import "../progress-bar/common";
 
 $button-border-width: 1px !default;
-$button-padding: ($pt-grid-size * 0.5) $pt-grid-size !default;
-$button-padding-small: 0 ($pt-grid-size * 0.7) !default;
-$button-padding-large: ($pt-grid-size * 0.5) ($pt-grid-size * 1.5) !default;
-$button-icon-spacing: ($pt-button-height - $pt-icon-size-standard) * 0.5 !default;
-$button-icon-spacing-large: ($pt-button-height-large - $pt-icon-size-large) * 0.5 !default;
+
 
 /*
 CSS `border` property issues:
@@ -63,8 +59,8 @@ $dark-minimal-button-background-color-hover: rgba($gray3, 0.15) !default;
 $dark-minimal-button-background-color-active: rgba($gray3, 0.3) !default;
 
 $button-outlined-width: 1px !default;
-$button-outlined-border-intent-opacity: 0.6 !default;
-$button-outlined-border-disabled-intent-opacity: 0.2 !default;
+$button-outlined-border-intent-opacity: 1 !default;
+$button-outlined-border-disabled-intent-opacity: 0.5 !default;
 
 // "intent": (default, hover, active colors)
 $button-intents: (
@@ -75,15 +71,15 @@ $button-intents: (
 ) !default;
 
 @mixin pt-button-layout() {
-  @include pt-flex-container(row, $button-icon-spacing, $inline: inline);
+  @include pt-flex-container(row, $comp-icon-spacing, $inline: inline);
   align-items: center;
 
   border: none;
   border-radius: $pt-border-radius;
   cursor: pointer;
-  font-size: $pt-font-size;
+  font-size: $comp-font-size;
   justify-content: center;
-  padding: $button-padding;
+  padding: $comp-padding;
   text-align: left;
   vertical-align: middle;
 }
@@ -95,19 +91,22 @@ $button-intents: (
 
 @mixin pt-button-height-large() {
   @include pt-button-height($pt-button-height-large);
-  @include pt-flex-margin(row, $button-icon-spacing-large);
-  font-size: $pt-font-size-large;
-  padding: $button-padding-large;
+  @include pt-flex-margin(row, $comp-icon-spacing-large);
+  font-size: $comp-font-size-large;
+  padding: $comp-padding-large;
 }
 
 @mixin pt-button-height-default() {
   @include pt-button-height($pt-button-height);
-  padding: $button-padding;
+  padding: $comp-padding;
 }
 
 @mixin pt-button-height-small() {
   @include pt-button-height($pt-button-height-small);
-  padding: $button-padding-small;
+  @include pt-flex-margin(row, $comp-icon-spacing-small);
+  font-size: $comp-font-size-small;
+  padding: $comp-padding-small;
+
 }
 
 // N.B. this mixin cannot be used on pseudo element selectors because it will produce invalid CSS
@@ -416,7 +415,7 @@ $dark-minimal-active-text-colors: (
   }
 
   &:hover {
-    background: rgba($intent-color, 0.15);
+    background: rgba($intent-color, 0.10);
     color: $text-color;
   }
 
@@ -478,15 +477,30 @@ $dark-minimal-active-text-colors: (
   }
 }
 
+$button-outlined-border-colors: (
+  "primary": $primary5,
+  "success": $success5,
+  "warning": $warning5,
+  "danger" : $danger5,
+
+
+) !default;
+
+
 @mixin pt-button-outlined() {
-  border: $button-outlined-width solid rgba($pt-text-color, 0.2);
+    // border: $button-outlined-width solid rgba($pt-text-color, 0.2);
+  box-shadow: $button-box-shadow;
   box-sizing: border-box;
 
   &:disabled,
   &.#{$ns}-disabled,
   &:disabled:hover,
   &.#{$ns}-disabled:hover {
-    border-color: rgba($pt-text-color-disabled, 0.1);
+      box-shadow: $button-box-shadow;
+  }
+
+  &:hover {
+      box-shadow: $button-box-shadow-hover;
   }
 
   .#{$ns}-dark & {
@@ -496,7 +510,7 @@ $dark-minimal-active-text-colors: (
   @each $intent, $colors in $button-intents {
     &.#{$ns}-intent-#{$intent} {
       @include pt-button-outlined-intent(
-        map-get($pt-intent-text-colors, $intent),
+        map-get($button-outlined-border-colors, $intent),
         map-get($pt-dark-intent-text-colors, $intent)
       );
     }
@@ -514,20 +528,21 @@ $dark-minimal-active-text-colors: (
   }
 }
 
-@mixin pt-button-outlined-intent($text-color, $dark-text-color) {
-  border-color: rgba($text-color, $button-outlined-border-intent-opacity);
+@mixin pt-button-outlined-intent($border-color, $dark-border-color) {
+    box-shadow: inset 0 0 0 $button-border-width rgba($border-color, $button-outlined-border-intent-opacity);
+  // border-color: rgba($text-color, $button-outlined-border-intent-opacity);
 
   &:disabled,
   &.#{$ns}-disabled {
-    border-color: rgba($text-color, $button-outlined-border-disabled-intent-opacity);
+      box-shadow: inset 0 0 0 $button-border-width rgba($border-color, $button-outlined-border-disabled-intent-opacity);
   }
 
   .#{$ns}-dark & {
-    border-color: rgba($dark-text-color, $button-outlined-border-intent-opacity);
+    border-color: rgba($dark-border-color, $button-outlined-border-intent-opacity);
 
     &:disabled,
     &.#{$ns}-disabled {
-      border-color: rgba($dark-text-color, $button-outlined-border-disabled-intent-opacity);
+      border-color: rgba($dark-border-color, $button-outlined-border-disabled-intent-opacity);
     }
   }
 }

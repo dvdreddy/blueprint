@@ -198,12 +198,12 @@ export abstract class AbstractButton<E extends HTMLButtonElement | HTMLAnchorEle
     };
 
     protected renderChildren(): React.ReactNode {
-        const { children, icon, loading, rightIcon, text } = this.props;
+        const { children, icon, loading, rightIcon, text, large } = this.props;
         const maybeHasText = !Utils.isReactNodeEmpty(text) || !Utils.isReactNodeEmpty(children);
         return [
             loading && <Spinner key="loading" className={Classes.BUTTON_SPINNER} size={IconSize.LARGE} />,
             // The icon is purely decorative if text is provided
-            <Icon key="leftIcon" icon={icon} aria-hidden={maybeHasText} tabIndex={maybeHasText ? -1 : undefined} />,
+            <Icon key="leftIcon" icon={icon} iconSize={large ? IconSize.LARGE : IconSize.STANDARD} aria-hidden={maybeHasText} tabIndex={maybeHasText ? -1 : undefined} />,
             maybeHasText && (
                 <span key="text" className={Classes.BUTTON_TEXT}>
                     {text}

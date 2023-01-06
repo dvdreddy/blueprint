@@ -32,18 +32,19 @@ Styleguide headings
 
 // tag: (font-size, line-height)
 $headings: (
-  "h1": (36px, 40px),
-  "h2": (28px, 32px),
-  "h3": (22px, 25px),
-  "h4": (18px, 21px),
-  "h5": (16px, 19px),
-  "h6": (14px, 16px)
+  "h1": (28px, 32px, 700),
+  "h2": (22px, 25px, 500),
+  "h3": (18px, 21px, 500),
+  "h4": (16px, 20px, 500),
+  "h5": (14px, 16px, 500),
+  "h6": (12px, 14px, 500)
 ) !default;
 
 @each $tag, $props in $headings {
   %#{$tag} {
     font-size: nth($props, 1);
     line-height: nth($props, 2);
+    font-weight: nth($props, 3);
   }
 
   #{$tag}.#{$ns}-heading {
@@ -167,13 +168,13 @@ Styleguide running-text
 
 // NOTE: these must be defined after .@ns-running-text in order to override font-size.
 .#{$ns}-text-large {
-  font-size: $pt-font-size-large;
-  // line-height comes from .@ns-(ui|running)-text
+    font-size: $pt-font-size-large;
+    line-height: $pt-line-height-large;
 }
 
 .#{$ns}-text-small {
-  font-size: $pt-font-size-small;
-  // line-height comes from .@ns-(ui|running)-text
+    font-size: $pt-font-size-small;
+    line-height: $pt-line-height-small;
 }
 
 /*
