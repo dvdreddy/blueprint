@@ -25,7 +25,7 @@ Styleguide callout
   @include running-typography();
   background-color: rgba($gray3, 0.15);
   border-radius: $pt-border-radius;
-  padding: $pt-grid-size ($pt-grid-size * 1.2) ($pt-grid-size * 0.9);
+  padding: $pt-grid-size ($pt-grid-size * 1.2);
   position: relative;
   width: 100%;
 

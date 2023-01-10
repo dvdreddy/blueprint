@@ -5,7 +5,8 @@
 @import "../forms/common";
 @import "../tag/common";
 
-$tag-input-padding: ($pt-input-height - $tag-height) * 0.5 !default;
+$tag-input-padding-horz: $pt-grid-size * 0.8 !default;
+$tag-input-padding-vert: $pt-grid-size * 0.5 !default;
 
 $tag-input-icon-padding: ($pt-input-height - $pt-icon-size-standard) * 0.5 !default;
 $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 0.5 !default;
@@ -17,25 +18,23 @@ $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 
   height: auto;
   line-height: inherit;
   min-height: $pt-input-height;
-  padding-left: $tag-input-padding;
-  padding-right: 0;
+  padding: 0 0 0 $tag-input-padding-horz;
 
   .#{$ns}-tag-input-icon {
     color: $pt-icon-color;
-    margin-left: $tag-input-icon-padding - $tag-input-padding;
-    margin-right: $tag-input-icon-padding;
+    margin-right: $tag-input-padding-horz;
     // margins to center icon in one-line input
     margin-top: $tag-input-icon-padding;
   }
 
   .#{$ns}-tag-input-values {
-    @include pt-flex-container(row, $tag-input-padding);
+    @include pt-flex-container(row, $tag-input-padding-horz);
     align-items: center;
     // fill vertical height
     align-self: stretch;
     flex-wrap: wrap;
-    margin-right: $tag-input-icon-padding;
-    margin-top: $tag-input-padding;
+    margin-right: $tag-input-padding-horz;
+    margin-top: $tag-input-padding-vert;
     // allow tags to ellipse and not overflow the container
     min-width: 0;
 
@@ -43,11 +42,11 @@ $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 
     // see: https://github.com/palantir/blueprint/issues/2872
     &:first-child .#{$ns}-input-ghost:first-child {
       // recall that some padding-left is already applied on the root component.
-      padding-left: $input-padding-horizontal - $tag-input-padding;
+      padding-left: $tag-input-padding-horz;
     }
 
     > * {
-      margin-bottom: $tag-input-padding;
+      margin-bottom: $tag-input-padding-vert;
     }
   }
 
@@ -76,8 +75,8 @@ $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 
 
   .#{$ns}-button,
   .#{$ns}-spinner {
-    margin: ($pt-input-height - $pt-button-height-small) * 0.5;
-    margin-left: 0;
+      margin: (($pt-input-height - $pt-button-height-small) * 0.5);
+      margin-left: 0;
   }
 
   .#{$ns}-button {
@@ -88,11 +87,21 @@ $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 
     @include pt-flex-margin(row, $tag-input-icon-padding-large);
     height: auto;
     min-height: $pt-input-height-large;
+    padding: 0 0 0 $comp-spacing-large-horz;
 
     .#{$ns}-tag-input-icon {
-      margin-left: $tag-input-icon-padding-large - $tag-input-padding;
+
+      margin-right: $comp-spacing-large-horz;
       margin-top: $tag-input-icon-padding-large;
     }
+
+    .#{$ns}-tag-input-values {
+        &:first-child .#{$ns}-input-ghost:first-child {
+            // recall that some padding-left is already applied on the root component.
+            padding-left: $comp-spacing-large-horz;
+        }
+    }
+
 
     .#{$ns}-input-ghost {
       line-height: $tag-height-large;
@@ -100,7 +109,7 @@ $tag-input-icon-padding-large: ($pt-input-height-large - $pt-icon-size-large) * 
 
     .#{$ns}-button {
       @include pt-button-height-default();
-      margin: ($pt-input-height-large - $pt-button-height) * 0.5;
+      margin: (($pt-input-height-large - $pt-button-height) * 0.5);
       margin-left: 0;
     }
 

@@ -90,7 +90,7 @@ export class Toast extends AbstractPureComponent2<ToastProps> {
                 </span>
                 <ButtonGroup minimal={true}>
                     {this.maybeRenderActionButton()}
-                    {isCloseButtonShown && <Button aria-label="Close" icon="cross" onClick={this.handleCloseClick} />}
+                    {isCloseButtonShown && <Button aria-label="Close" icon="cross" intent={intent} onClick={this.handleCloseClick} />}
                 </ButtonGroup>
             </div>
         );
@@ -115,11 +115,11 @@ export class Toast extends AbstractPureComponent2<ToastProps> {
     }
 
     private maybeRenderActionButton() {
-        const { action } = this.props;
+        const { action, intent } = this.props;
         if (action == null) {
             return undefined;
         } else {
-            return <AnchorButton {...action} intent={undefined} onClick={this.handleActionClick} />;
+            return <AnchorButton {...action} intent={intent} onClick={this.handleActionClick} />;
         }
     }
 

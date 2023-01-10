@@ -85,7 +85,7 @@ $button-intents: (
 }
 
 @mixin pt-button-height($height) {
-  min-height: $height;
+  height: $height;
   min-width: $height;
 }
 

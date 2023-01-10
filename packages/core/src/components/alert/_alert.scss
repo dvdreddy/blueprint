@@ -10,6 +10,8 @@
 
 .#{$ns}-alert-body {
   display: flex;
+  line-height: $pt-line-height-large;
+  font-size: $pt-font-size-large;
 
   .#{$ns}-icon {
     font-size: $pt-icon-size-large * 2;

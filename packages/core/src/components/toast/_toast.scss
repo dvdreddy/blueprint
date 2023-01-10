@@ -4,25 +4,27 @@
 @import "../../common/variables";
 @import "../../common/react-transition";
 
-$toast-height: $pt-button-height-large !default;
+$toast-height: $pt-grid-size * 3.4 !default;
 $toast-min-width: $pt-grid-size * 30 !default;
 $toast-max-width: $pt-grid-size * 50 !default;
 $toast-margin: $pt-grid-size * 2 !default;
 
 $toast-intent-colors: (
-  "primary": ($pt-intent-primary, $white, $primary2, $primary1),
-  "success": ($pt-intent-success, $white, $success2, $success1),
-  "warning": ($pt-intent-warning, $white, $warning2, $warning1),
-  "danger": ($pt-intent-danger, $white, $danger2, $danger1),
+  "primary": ($pt-intent-primary, $pt-text-color, $primary2, $primary2, $primary1),
+  "success": ($pt-intent-success, $pt-text-color, $success2, $success2, $success1),
+  "warning": ($pt-intent-warning, $pt-text-color, $warning2, $warning2, $warning1),
+  "danger": ($pt-intent-danger, $pt-text-color, $danger2, $danger2, $danger1),
 ) !default;
 
 @mixin pt-toast-intent(
   $background-color,
   $text-color,
+  $icon-color,
   $button-hover-color,
   $button-active-color,
 ) {
-  background-color: $background-color;
+
+  background: linear-gradient(0deg, rgba($background-color, 0.1), rgba($background-color, 0.1)), #FFFFFF;
   color: $text-color;
 
   .#{$ns}-icon:first-child {
@@ -32,22 +34,22 @@ $toast-intent-colors: (
   // HACKHACK custom colors for buttons on intent background so they always show up nice
   /* stylelint-disable declaration-no-important */
   .#{$ns}-button {
-    background-color: $background-color !important;
+    // background-color: $background-color !important;
     color: $text-color !important;
 
     &:hover {
-      background-color: $button-hover-color !important;
+      //background-color: $button-hover-color !important;
       color: $text-color !important;
     }
 
     &:active {
-      background-color: $button-active-color !important;
+      //background-color: $button-active-color !important;
       color: $text-color !important;
     }
 
     &:focus {
       // blue outline color shows poorly on colored bg
-      outline-color: rgba($white, 0.5);
+       // outline-color: rgba($white, 0.5);
     }
 
     &:last-child > .#{$ns}-icon-cross {
@@ -97,6 +99,7 @@ $toast-intent-colors: (
     $before: "&",
     $after: "~ &"
   );
+
   align-items: flex-start;
   background-color: $white;
   border-radius: $pt-border-radius;
@@ -105,6 +108,7 @@ $toast-intent-colors: (
   margin: $toast-margin 0 0;
   max-width: $toast-max-width;
   min-width: $toast-min-width;
+  border-radius: 4px;
 
   // toast is interactive even though container isn't
   pointer-events: all;
@@ -163,8 +167,10 @@ $toast-intent-colors: (
 
 .#{$ns}-toast-message {
   flex: 1 1 auto;
-  padding: centered-text($toast-height);
+  padding: centered-text($toast-height, $pt-line-height-large);
   word-break: break-word;
+  font-size: $pt-font-size-large;
+  line-height: $pt-line-height-large;
 }
 
 .#{$ns}-toast-container {

@@ -21,7 +21,7 @@ import { AbstractPureComponent2 } from "../../common";
 import * as Classes from "../../common/classes";
 import { DISPLAYNAME_PREFIX, MaybeElement, Props } from "../../common/props";
 import { ensureElement } from "../../common/utils";
-import { H4 } from "../html/html";
+import { H5 } from "../html/html";
 import { Icon, IconName, IconSize } from "../icon/icon";
 
 export enum NonIdealStateIconSize {
@@ -114,7 +114,7 @@ export class NonIdealState extends AbstractPureComponent2<NonIdealStateProps> {
         } else {
             return (
                 <div className={Classes.NON_IDEAL_STATE_TEXT}>
-                    {title && <H4>{title}</H4>}
+                    {title && <H5>{title}</H5>}
                     {description && ensureElement(description, "div")}
                 </div>
             );

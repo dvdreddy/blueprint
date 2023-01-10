@@ -138,7 +138,8 @@ $dialog-padding: $pt-grid-size * 1.5 !default;
 
 .#{$ns}-dialog-body {
   flex: 1 1 auto;
-  line-height: $pt-grid-size * 1.8;
+  line-height: $pt-line-height-large;
+  font-size: $pt-font-size-large;
   margin: $dialog-padding;
 }
 

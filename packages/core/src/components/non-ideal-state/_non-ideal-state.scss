@@ -38,7 +38,7 @@ Styleguide non-ideal-state
   .#{$ns}-heading {
     color: $pt-text-color-muted;
     line-height: $pt-grid-size * 2;
-    margin-bottom: $pt-grid-size;
+    margin-bottom: $pt-grid-size * 0.8;
 
     &:only-child {
       margin-bottom: 0;

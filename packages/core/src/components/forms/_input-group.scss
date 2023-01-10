@@ -78,8 +78,7 @@ $input-button-height-small: $pt-button-height-smaller !default;
 
   .#{$ns}-button {
     @include pt-button-height($input-button-height);
-    margin: ($pt-input-height - $input-button-height) * 0.5;
-    padding: $comp-padding-small;
+    margin: (($pt-input-height - $input-button-height) * 0.5) ($pt-grid-size * 0.8);
 
     // icons CSS API support
     &:empty { padding: 0; }
@@ -106,11 +105,11 @@ $input-button-height-small: $pt-button-height-smaller !default;
   > .#{$ns}-input-left-container > .#{$ns}-icon,
   > .#{$ns}-icon,
   .#{$ns}-input-action > .#{$ns}-spinner {
-    margin: ($pt-input-height - $pt-icon-size-standard) * 0.5;
+    margin: (($pt-input-height - $pt-icon-size-standard) * 0.5) ($pt-grid-size * 0.8);
   }
 
   .#{$ns}-tag {
-    margin: $pt-grid-size * 0.5;
+    margin: (($pt-input-height - $input-button-height) * 0.5) ($pt-grid-size * 0.8);
   }
 
   // all buttons go gray in default state and assume their native colors only when hovered
@@ -155,13 +154,13 @@ $input-button-height-small: $pt-button-height-smaller !default;
   &.#{$ns}-large {
     .#{$ns}-button {
       @include pt-button-height($input-button-height-large);
-      margin: ($pt-input-height-large - $input-button-height-large) * 0.5;
+      margin: (($pt-input-height-large - $input-button-height-large) * 0.5) ($pt-grid-size * 1.2);
     }
 
     > .#{$ns}-input-left-container > .#{$ns}-icon,
     > .#{$ns}-icon,
     .#{$ns}-input-action > .#{$ns}-spinner {
-      margin: ($pt-input-height-large - $pt-icon-size-standard) * 0.5;
+      margin: (($pt-input-height-large - $pt-icon-size-standard) * 0.5) ($pt-grid-size * 1.2);
     }
 
     .#{$ns}-input {
@@ -175,23 +174,30 @@ $input-button-height-small: $pt-button-height-smaller !default;
         padding-right: $pt-button-height-large;
       }
     }
+
+    .#{$ns}-tag {
+        margin: (($pt-input-height-large - $input-button-height-large) * 0.5) ($pt-grid-size * 1.2);
+    }
   }
 
   &.#{$ns}-small {
     .#{$ns}-button {
       @include pt-button-height($pt-button-height-smaller);
-      margin: ($pt-input-height-small - $pt-button-height-smaller) * 0.5;
+      margin: (($pt-input-height-small - $pt-button-height-smaller) * 0.5) ($pt-grid-size * 0.4);
     }
 
     .#{$ns}-tag {
-      @include pt-button-height($pt-button-height-smaller);
-      margin: ($pt-input-height-small - $pt-button-height-smaller) * 0.5;
+        @include pt-button-height($pt-button-height-smaller);
+        font-size: $comp-font-size-small;
+        line-height: $pt-line-height-small;
+        min-height: $pt-button-height-smaller;
+        margin: (($pt-input-height-small - $pt-button-height-smaller) * 0.5) ($pt-grid-size * 0.4);
     }
 
     > .#{$ns}-input-left-container > .#{$ns}-icon,
     > .#{$ns}-icon,
     .#{$ns}-input-action > .#{$ns}-spinner {
-      margin: ($pt-input-height-small - $pt-icon-size-standard) * 0.5;
+      margin: (($pt-input-height-small - $pt-icon-size-standard) * 0.5) ($pt-grid-size * 0.4);
     }
 
     .#{$ns}-input {

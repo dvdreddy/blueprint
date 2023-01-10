@@ -7,15 +7,16 @@
 $tag-default-color: $gray1 !default;
 $dark-tag-default-color: $gray5 !default;
 
-$tag-height: $pt-grid-size * 2 !default;
-$tag-line-height: $pt-icon-size-standard !default;
-$tag-padding-top: ($tag-height - $tag-line-height) * 0.5 !default;
-$tag-padding: $tag-padding-top * 3 !default;
+$tag-height: $pt-grid-size * 2.4 !default;
+$tag-line-height: $pt-grid-size * 1.6 !default;
+$tag-padding: ($tag-height - $tag-line-height) * 0.5 !default;
+$tag-padding-horz: $pt-grid-size * 0.6 !default;
 $tag-margin: ($pt-input-height - $tag-height) * 0.5 !default;
 
 $tag-height-large: $pt-grid-size * 3 !default;
-$tag-line-height-large: $pt-icon-size-large !default;
-$tag-padding-large: ($tag-height-large - $tag-line-height-large) !default;
+$tag-line-height-large: $pt-line-height-large !default;
+$tag-padding-large: ($tag-height-large - $tag-line-height-large) * 0.5 !default;
+$tag-padding-large-horz: $pt-grid-size * 0.8 !default;
 
 $tag-icon-spacing: ($tag-height - 12px) * 0.5 !default;
 $tag-icon-spacing-large: ($tag-height-large - $pt-icon-size-standard) * 0.5 !default;
@@ -30,12 +31,12 @@ $tag-round-adjustment: 2px !default;
   border-radius: $pt-border-radius;
   box-shadow: none;
   color: $white;
-  font-size: $pt-font-size-small;
+  font-size: $pt-font-size;
   line-height: $tag-line-height;
   max-width: 100%;
   min-height: $tag-height;
   min-width: $tag-height;
-  padding: $tag-padding-top $tag-padding;
+  padding: $tag-padding $tag-padding-horz;
   position: relative;
 
   &:focus {
@@ -57,9 +58,9 @@ $tag-round-adjustment: 2px !default;
 
   &.#{$ns}-round {
     border-radius: $tag-height-large;
-    padding-left: $tag-padding + $tag-round-adjustment;
+    padding-left: $tag-padding-horz + $tag-round-adjustment;
     // optical adjustment for rounded tags
-    padding-right: $tag-padding + $tag-round-adjustment;
+    padding-right: $tag-padding-horz + $tag-round-adjustment;
   }
 
   .#{$ns}-dark & {
@@ -98,12 +99,12 @@ $tag-round-adjustment: 2px !default;
   line-height: $tag-line-height-large;
   min-height: $tag-height-large;
   min-width: $tag-height-large;
-  padding: ($tag-padding-large * 0.5) $tag-padding-large;
+  padding: $tag-padding-large $tag-padding-large-horz;
 
   &.#{$ns}-round {
-    padding-left: $tag-padding-large + $tag-round-adjustment;
+    padding-left: $tag-padding-large-horz + $tag-round-adjustment;
     // optical adjustment for rounded tags
-    padding-right: $tag-padding-large + $tag-round-adjustment;
+    padding-right: $tag-padding-large-horz + $tag-round-adjustment;
   }
 }
 
@@ -261,14 +262,15 @@ $tag-round-adjustment: 2px !default;
   color: rgba($white, 0.7);
   cursor: pointer;
   display: flex;
-  margin-bottom: -$tag-padding-top;
-  /* stylelint-disable-next-line declaration-no-important */
-  margin-right: -$tag-padding !important;
   // top/bottom to allow for padding to enlarge click area,
   // right to tuck remove button into padding space.
-  margin-top: -$tag-padding-top;
-  padding: $tag-padding-top;
-  padding-left: 0;
+  margin-bottom: -$tag-padding;
+  /* stylelint-disable-next-line declaration-no-important */
+  margin-right: -$tag-padding-horz !important;
+  // top/bottom to allow for padding to enlarge click area,
+  // right to tuck remove button into padding space.
+  margin-top: -$tag-padding;
+  padding: $tag-padding $tag-padding-horz;
 
   &:hover {
     background: none;

@@ -111,7 +111,6 @@ Styleguide textarea
 /* stylelint-disable-next-line selector-no-qualifying-type */
 textarea.#{$ns}-input {
   max-width: 100%;
-  padding: $input-padding-horizontal;
   border-radius: $pt-border-radius * 2;
 
   &,
@@ -121,9 +120,10 @@ textarea.#{$ns}-input {
     // line-height is needed to center text on <input> but not on multiline <textarea>
     height: auto;
     line-height: inherit;
+    padding: $pt-grid-size * 0.5 $pt-grid-size * 0.2 $pt-grid-size * 0.2 $pt-grid-size * 0.8;
   }
 
-  &.#{$ns}-small {
-    padding: $input-small-padding;
+  &.#{$ns}-large {
+    padding-left: $pt-grid-size * 1.2;
   }
 }
