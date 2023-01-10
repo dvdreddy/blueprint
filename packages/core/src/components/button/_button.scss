@@ -206,23 +206,20 @@ Styleguide button
 
   // special case override: use dark text for warning intent
   &.#{$ns}-intent-warning {
-    background: $orange5;
-    color: $pt-text-color;
+    color: $dark-gray2;
 
     &:not(.#{$ns}-disabled).#{$ns}-icon > svg {
-      fill: rgba($dark-gray1, 0.7);
+      fill: rgba($dark-gray2, 0.7);
     }
 
     &:not(.#{$ns}-disabled):not(.#{$ns}-minimal):not(.#{$ns}-outlined) {
       &:hover {
-        background: $orange4;
-        color: $pt-text-color;
+        color: $dark-gray2;
       }
 
       &:active,
       &.#{$ns}-active {
-        background: $orange3;
-        color: $pt-text-color;
+        color: $dark-gray2;
 
         @media (forced-colors: active) and (prefers-color-scheme: dark) {
           // Windows High Contrast dark theme
@@ -233,11 +230,10 @@ Styleguide button
 
     &:disabled,
     &.#{$ns}-disabled {
-      background: rgba($orange3, 0.5);
-      color: rgba($dark-gray1, 0.35);
+      color: rgba($dark-gray2, 0.35);
 
       .#{$ns}-dark & {
-        color: rgba($dark-gray1, 0.6);
+        color: rgba($dark-gray2, 0.6);
       }
     }
 
