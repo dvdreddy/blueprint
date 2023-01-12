@@ -19,8 +19,6 @@ yarn-error.log
 
 # Blueprint
 build
-dist
-lib
 generated
 coverage
 /docs

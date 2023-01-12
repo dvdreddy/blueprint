@@ -1,0 +1,1 @@
+export declare const noDeprecatedTypeReferencesRule: import("@typescript-eslint/utils/dist/ts-eslint/Rule").RuleModule<"migration", [], import("@typescript-eslint/utils/dist/ts-eslint/Rule").RuleListener>;

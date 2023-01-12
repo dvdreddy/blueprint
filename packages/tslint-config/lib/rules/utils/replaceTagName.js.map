@@ -1,0 +1,1 @@
+{"version":3,"file":"replaceTagName.js","sourceRoot":"","sources":["../../../src/rules/utils/replaceTagName.ts"],"names":[],"mappings":";AAAA;;;;;;;;;;;;;;GAcG;;;AAEH,iCAAqC;AAGrC,qCAAqC;AACrC,SAAgB,cAAc,CAAC,OAA6B,EAAE,UAAkB;IAC5E,OAAO,IAAI,oBAAW,CAAC,OAAO,CAAC,YAAY,EAAE,EAAE,OAAO,CAAC,YAAY,EAAE,EAAE,UAAU,CAAC,CAAC;AACvF,CAAC;AAFD,wCAEC"}

@@ -1,0 +1,25 @@
+.bp4-datepicker-timepicker-wrapper{
+  padding:0 2px;
+}
+
+.bp4-timezone-select-popover{
+  min-width:370px;
+}
+
+.bp4-timezone-select-target{
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.bp4-date-input .bp4-input-action{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.bp4-date-input-timezone-select{
+  width:100%;
+}
+/*# sourceMappingURL=blueprint-datetime2.css.map */
