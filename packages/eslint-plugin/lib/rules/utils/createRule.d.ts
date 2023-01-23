@@ -1,3 +1,0 @@
-import { ESLintUtils } from "@typescript-eslint/utils";
-/** Create a rule and automatically fill its url based on the rule name. */
-export declare const createRule: <TOptions extends readonly unknown[], TMessageIds extends string, TRuleListener extends import("@typescript-eslint/utils/dist/ts-eslint/Rule").RuleListener = import("@typescript-eslint/utils/dist/ts-eslint/Rule").RuleListener>({ name, meta, ...rule }: Readonly<ESLintUtils.RuleWithMetaAndName<TOptions, TMessageIds, TRuleListener>>) => import("@typescript-eslint/utils/dist/ts-eslint/Rule").RuleModule<TMessageIds, TOptions, TRuleListener>;
