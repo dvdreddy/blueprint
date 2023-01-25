@@ -170,13 +170,13 @@ export class Alert extends AbstractPureComponent2<AlertProps> {
                 portalContainer={this.props.portalContainer}
             >
                 <div className={Classes.ALERT_BODY}>
-                    <Icon icon={icon} size={40} intent={intent} />
+                    <Icon icon={icon} size={32} intent={intent} />
                     <div className={Classes.ALERT_CONTENTS}>{children}</div>
                 </div>
                 <div className={Classes.ALERT_FOOTER}>
-                    <Button loading={loading} intent={intent} text={confirmButtonText} onClick={this.handleConfirm} />
+                    <Button loading={loading} intent={intent} text={confirmButtonText} small={true} onClick={this.handleConfirm} />
                     {cancelButtonText && (
-                        <Button text={cancelButtonText} disabled={loading} onClick={this.handleCancel} />
+                        <Button text={cancelButtonText} disabled={loading} small={true} onClick={this.handleCancel} />
                     )}
                 </div>
             </Dialog>

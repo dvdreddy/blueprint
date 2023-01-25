@@ -36,7 +36,7 @@ Styleguide callout
     &::before {
       @include pt-icon($pt-icon-size-large);
       color: $pt-icon-color;
-      left: $pt-grid-size;
+      left: $pt-grid-size * 1.2;
       position: absolute;
       top: $pt-grid-size;
     }
@@ -52,7 +52,7 @@ Styleguide callout
 
     > .#{$ns}-icon:first-child {
       color: $pt-icon-color;
-      left: $pt-grid-size;
+      left: $pt-grid-size * 1.2 ;
       position: absolute;
       top: $pt-grid-size;
     }

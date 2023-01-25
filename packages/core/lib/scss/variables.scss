@@ -1,0 +1,308 @@
+/*
+ * Copyright 2022 Palantir Technologies, Inc. All rights reserved.
+ */
+
+$black: #00130c !default;
+
+$dark-gray1: #002618 !default;
+$dark-gray2: #1c2f29 !default;
+$dark-gray3: #333f3b !default;
+$dark-gray4: #4d5754 !default;
+$dark-gray5: #666f6c !default;
+
+$gray1: #808785 !default;
+$gray2: #999f9d !default;
+$gray3: #b3b7b6 !default;
+$gray4: #cccfce !default;
+$gray5: #e6e7e7 !default;
+
+$light-gray1: #edeff2 !default;
+$light-gray2: #f2f4f6 !default;
+$light-gray3: #f6f7f9 !default;
+$light-gray4: #fafafb !default;
+$light-gray5: #fdfdfd !default;
+
+$white: #fff !default;
+
+$blue1: #184a90 !default;
+$blue2: #215db0 !default;
+$blue3: #2d72d2 !default;
+$blue4: #4c90f0 !default;
+$blue5: #8abbff !default;
+
+$green1: #165a36 !default;
+$green2: #1c6e42 !default;
+$green3: #238551 !default;
+$green4: #32a467 !default;
+$green5: #72ca9b !default;
+
+$orange1: #77450d !default;
+$orange2: #935610 !default;
+$orange3: #c87619 !default;
+$orange4: #ec9a3c !default;
+$orange5: #fbb360 !default;
+
+$red1: #8e292c;
+$red2: #ac2f33;
+$red3: #cd4246;
+$red4: #e76a6e;
+$red5: #fa999c;
+
+$vermilion1: #96290d !default;
+$vermilion2: #b83211 !default;
+$vermilion3: #d33d17 !default;
+$vermilion4: #eb6847 !default;
+$vermilion5: #ff9980 !default;
+
+$rose1: #a82255 !default;
+$rose2: #c22762 !default;
+$rose3: #db2c6f !default;
+$rose4: #f5498b !default;
+$rose5: #ff66a1 !default;
+
+$violet1: #5c255c !default;
+$violet2: #7c327c !default;
+$violet3: #9d3f9d !default;
+$violet4: #bd6bbd !default;
+$violet5: #d69fd6 !default;
+
+$indigo1: #5642a6 !default;
+$indigo2: #634dbf !default;
+$indigo3: #7961db !default;
+$indigo4: #9881f3 !default;
+$indigo5: #bdadff !default;
+
+$cerulean1: #1f4b99 !default;
+$cerulean2: #2458b3 !default;
+$cerulean3: #2965cc !default;
+$cerulean4: #4580e6 !default;
+$cerulean5: #669eff !default;
+
+$turquoise1: #004d46 !default;
+$turquoise2: #007067 !default;
+$turquoise3: #00a396 !default;
+$turquoise4: #13c9ba !default;
+$turquoise5: #7ae1d8 !default;
+
+$forest1: #1d7324 !default;
+$forest2: #238c2c !default;
+$forest3: #29a634 !default;
+$forest4: #43bf4d !default;
+$forest5: #62d96b !default;
+
+$lime1: #43501b !default;
+$lime2: #5a701a !default;
+$lime3: #8eb125 !default;
+$lime4: #b6d94c !default;
+$lime5: #d4f17e !default;
+
+$gold1: #5c4405 !default;
+$gold2: #866103 !default;
+$gold3: #d1980b !default;
+$gold4: #f0b726 !default;
+$gold5: #fbd065 !default;
+
+$sepia1: #5e4123 !default;
+$sepia2: #7a542e !default;
+$sepia3: #946638 !default;
+$sepia4: #af855a !default;
+$sepia5: #d0b090 !default;
+
+$primary1: #03431b !default;
+$primary2: #05531b !default;
+$primary3: #0a7415 !default;
+$primary4: #3b9044 !default;
+$primary5: #6cac73 !default;
+
+$danger1: #8c163d !default;
+$danger2: #ae2445 !default;
+$danger3: #f24852 !default;
+$danger4: #f56d75 !default;
+$danger5: #f79197 !default;
+
+$success1: #2c7406 !default;
+$success2: #3f9009 !default;
+$success3: #6ec913 !default;
+$success4: #8bd442 !default;
+$success5: #a8df71 !default;
+
+$warning1: #b77a05 !default;
+$warning2: #db9907 !default;
+$warning3: #ffba0a !default;
+$warning4: #ffc83b !default;
+$warning5: #ffd66c !default;
+$pt-intent-primary: #0a7415 !default;
+$pt-intent-success: #6ec913 !default;
+$pt-intent-warning: #ffba0a !default;
+$pt-intent-danger: #f24852 !default;
+
+$pt-app-background-color: #fdfdfd !default;
+$pt-dark-app-background-color: #1c2f29 !default;
+
+$pt-outline-color: rgba(10, 116, 21, 0.3) !default;
+
+$pt-text-color: #002618 !default;
+$pt-text-color-muted: #808785 !default;
+$pt-text-color-disabled: #b3b7b6 !default;
+$pt-heading-color: #002618 !default;
+$pt-link-color: #05531b !default;
+
+$pt-dark-text-color: #fdfdfd !default;
+$pt-dark-text-color-muted: #cccfce !default;
+$pt-dark-text-color-disabled: rgba(204, 207, 206, 0.6) !default;
+$pt-dark-heading-color: #fdfdfd !default;
+$pt-dark-link-color: #8abbff !default;
+$pt-text-selection-color: rgba(10, 116, 21, 0.15) !default;
+
+$pt-icon-color: #808785 !default;
+$pt-icon-color-hover: #002618 !default;
+$pt-icon-color-disabled: #b3b7b6 !default;
+$pt-icon-color-selected: #05531b !default;
+$pt-dark-icon-color: #cccfce !default;
+$pt-dark-icon-color-hover: #fdfdfd !default;
+$pt-dark-icon-color-disabled: rgba(204, 207, 206, 0.6) !default;
+$pt-dark-icon-color-selected: #0a7415 !default;
+
+$pt-divider-black: #e6e7e7 !default;
+$pt-dark-divider-black: rgba(0, 19, 12, 0.4) !default;
+$pt-dark-divider-white: rgba(255, 255, 255, 0.2) !default;
+
+$pt-code-text-color: #808785 !default;
+$pt-dark-code-text-color: #cccfce !default;
+$pt-code-background-color: rgba(255, 255, 255, 0.7) !default;
+$pt-dark-code-background-color: rgba(0, 19, 12, 0.3) !default;
+$ns: bp4;
+$bp-ns: bp4;
+
+$pt-grid-size: 10px !default;
+
+$icons16-family: "blueprint-icons-16" !default;
+$icons20-family: "blueprint-icons-20" !default;
+
+$pt-icon-size-standard: 16px !default;
+$pt-icon-size-large: 20px !default;
+
+$pt-font-family: "GT Walsheim Pro", -apple-system, "BlinkMacSystemFont",
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+  "Helvetica Neue", "blueprint-icons-16", sans-serif !default;
+
+$pt-font-family-monospace: monospace !default;
+$pt-font-size: 12px !default;
+
+$pt-font-size-large: 14px !default;
+$pt-line-height-large: 20px !default;
+
+$pt-font-size-small: 10px !default;
+$pt-line-height-small: 14px !default;
+
+$pt-line-height: 1.33333 !default;
+
+$comp-font-size: 14px;
+$comp-line-height: 1.33333;
+$comp-font-size-large: 16px !default;
+$comp-line-height-large: 20px !default;
+$comp-font-size-small: 12px;
+$comp-line-height-small: 14px;
+
+$comp-icon-spacing: 8px !default;
+$comp-icon-spacing-large: 10px !default;
+$comp-icon-spacing-small: 6px !default;
+
+$comp-spacing-horz: 8px !default;
+$comp-spacing-vert: 5px !default;
+$comp-padding: 5px 8px !default;
+
+$comp-spacing-small-horz: 4px !default;
+$comp-spacing-small-vert: 4px !default;
+
+$comp-padding-small: 4px 4px !default;
+
+$comp-spacing-large-horz: 12px !default;
+$comp-spacing-large-vert: 10px !default;
+
+$comp-padding-large: 10px 12px !default;
+
+$pt-border-radius: 2px !default;
+
+$pt-button-height: 30px !default;
+$pt-button-height-small: 24px !default;
+$pt-button-height-smaller: 20px !default;
+$pt-button-height-large: 40px !default;
+
+$pt-input-height: 30px !default;
+$pt-input-height-large: 40px !default;
+$pt-input-height-small: 24px !default;
+
+$pt-navbar-height: 50px !default;
+
+$pt-z-index-base: 0 !default;
+$pt-z-index-content: 10 !default;
+$pt-z-index-overlay: 20 !default;
+$pt-z-index-dialog-header: 30 !default;
+
+$pt-border-shadow-opacity: 0.1 !default;
+$pt-drop-shadow-opacity: 0.2 !default;
+$pt-dark-border-shadow-opacity: 0.2 !default;
+$pt-dark-drop-shadow-opacity: 0.4 !default;
+
+$pt-elevation-shadow-0: 0 0 0 1px #e6e7e7 !default;
+$pt-elevation-shadow-1: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 2px 2px rgba(0, 19, 12, 0.2) !default;
+$pt-elevation-shadow-2: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 1px 1px rgba(0, 19, 12, 0.2), 0 2px 8px rgba(0, 19, 12, 0.2) !default;
+$pt-elevation-shadow-3: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 2px 8px rgba(0, 19, 12, 0.2), 0 4px 12px rgba(0, 19, 12, 0.2) !default;
+$pt-elevation-shadow-4: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 4px 8px rgba(0, 19, 12, 0.2), 0 8px 28px 6px rgba(0, 19, 12, 0.2) !default;
+
+$pt-dark-elevation-shadow-0: inset 0 0 0 1px rgba(255, 255, 255, 0.2) !default;
+$pt-dark-elevation-shadow-1: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 1px 1px 0 rgba(0, 19, 12, 0.4) !default;
+$pt-dark-elevation-shadow-2: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 1px 1px rgba(0, 19, 12, 0.4), 0 2px 6px rgba(0, 19, 12, 0.4) !default;
+$pt-dark-elevation-shadow-3: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 2px 4px rgba(0, 19, 12, 0.4), 0 8px 24px rgba(0, 19, 12, 0.4) !default;
+$pt-dark-elevation-shadow-4: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 4px 8px rgba(0, 19, 12, 0.4), 0 18px 46px 6px rgba(0, 19, 12, 0.4) !default;
+
+$pt-transition-ease: cubic-bezier(0.4, 1, 0.75, 0.9) !default;
+$pt-transition-ease-bounce: cubic-bezier(0.54, 1.12, 0.38, 1.11) !default;
+$pt-transition-duration: 100ms !default;
+
+$pt-input-box-shadow: inset 0 0 0 1px #b3b7b6 !default;
+
+$pt-dialog-box-shadow: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 2px 8px rgba(0, 19, 12, 0.2), 0 4px 12px rgba(0, 19, 12, 0.2) !default;
+$pt-popover-box-shadow: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 2px 8px rgba(0, 19, 12, 0.2), 0 4px 12px rgba(0, 19, 12, 0.2) !default;
+$pt-tooltip-box-shadow: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 2px 8px rgba(0, 19, 12, 0.2), 0 4px 12px rgba(0, 19, 12, 0.2) !default;
+$pt-toast-box-shadow: 0 0 0 1px rgba(0, 19, 12, 0.1),
+  0 1px 1px rgba(0, 19, 12, 0.2), 0 2px 8px rgba(0, 19, 12, 0.2) !default;
+
+$pt-dark-input-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  inset 0 -1px 1px 0 #b3b7b6 !default;
+$pt-dark-input-intent-box-shadow-colors: (
+  "primary": #4c90f0,
+  "success": #32a467,
+  "warning": #ec9a3c,
+  "danger": #e76a6e
+) !default;
+
+$pt-dark-dialog-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 2px 4px rgba(0, 19, 12, 0.4), 0 8px 24px rgba(0, 19, 12, 0.4) !default;
+$pt-dark-popover-border-color: #5e6064 !default;
+$pt-dark-popover-box-shadow: 0 0 0 1px #5e6064,
+  inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 19, 12, 0.4),
+  0 8px 24px rgba(0, 19, 12, 0.4) !default;
+$pt-dark-tooltip-box-shadow: 0 2px 4px rgba(0, 19, 12, 0.4),
+  0 8px 24px rgba(0, 19, 12, 0.4) !default;
+$pt-dark-toast-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+  0 2px 4px rgba(0, 19, 12, 0.4), 0 8px 24px rgba(0, 19, 12, 0.4) !default;
+
+$pt-high-contrast-mode-border-color: buttonborder;
+$pt-high-contrast-mode-active-background-color: highlight;
+$pt-high-contrast-mode-active-text-color: highlight;
+$pt-high-contrast-mode-disabled-border-color: graytext;
+$pt-high-contrast-mode-disabled-text-color: graytext;
+$pt-high-contrast-mode-disabled-background-color: graytext;

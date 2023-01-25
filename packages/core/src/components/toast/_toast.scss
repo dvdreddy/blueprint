@@ -119,13 +119,14 @@ $toast-intent-colors: (
 
   .#{$ns}-button-group {
     flex: 0 0 auto;
-    padding: ($toast-height - $pt-button-height) * 0.5;
+    padding: ($toast-height - $pt-button-height-small) * 0.5 8px;
     padding-left: 0;
+    gap: 4px;
   }
 
   > .#{$ns}-icon {
     color: $pt-icon-color;
-    margin: ($toast-height - $pt-icon-size-standard) * 0.5;
+    margin: ($toast-height - $pt-icon-size-standard) * 0.5 8px;
     margin-right: 0;
   }
 
@@ -167,10 +168,10 @@ $toast-intent-colors: (
 
 .#{$ns}-toast-message {
   flex: 1 1 auto;
-  padding: centered-text($toast-height, $pt-line-height-large);
+  padding: centered-text($toast-height, $pt-line-height * $pt-font-size) 8px;
   word-break: break-word;
-  font-size: $pt-font-size-large;
-  line-height: $pt-line-height-large;
+  font-size: $pt-font-size;
+  line-height: $pt-line-height;
 }
 
 .#{$ns}-toast-container {

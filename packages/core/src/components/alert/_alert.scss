@@ -10,11 +10,11 @@
 
 .#{$ns}-alert-body {
   display: flex;
-  line-height: $pt-line-height-large;
-  font-size: $pt-font-size-large;
+  line-height: $pt-line-height;
+  font-size: $pt-font-size;
 
   .#{$ns}-icon {
-    font-size: $pt-icon-size-large * 2;
+    font-size: $pt-icon-size-standard * 2;
     margin-right: $pt-grid-size * 2;
     margin-top: 0;
   }

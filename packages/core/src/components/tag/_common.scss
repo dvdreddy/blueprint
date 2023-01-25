@@ -18,8 +18,8 @@ $tag-line-height-large: $pt-line-height-large !default;
 $tag-padding-large: ($tag-height-large - $tag-line-height-large) * 0.5 !default;
 $tag-padding-large-horz: $pt-grid-size * 0.8 !default;
 
-$tag-icon-spacing: ($tag-height - 12px) * 0.5 !default;
-$tag-icon-spacing-large: ($tag-height-large - $pt-icon-size-standard) * 0.5 !default;
+$tag-icon-spacing: $pt-grid-size * 0.6 !default;
+$tag-icon-spacing-large: $pt-grid-size * 0.8 !default;
 
 $tag-round-adjustment: 2px !default;
 
@@ -95,7 +95,7 @@ $tag-round-adjustment: 2px !default;
 
 @mixin pt-tag-large() {
   @include pt-flex-margin(row, $tag-icon-spacing-large);
-  font-size: $pt-font-size;
+  font-size: $pt-font-size-large;
   line-height: $tag-line-height-large;
   min-height: $tag-height-large;
   min-width: $tag-height-large;
