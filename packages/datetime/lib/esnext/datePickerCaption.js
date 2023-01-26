@@ -64,7 +64,7 @@ export class DatePickerCaption extends AbstractPureComponent2 {
         // measure width of text as rendered inside our container element.
         const monthTextWidth = measureTextWidth(this.displayedMonthText, Classes.DATEPICKER_CAPTION_MEASURE, this.containerElement);
         const monthSelectWidth = this.containerElement == null ? 0 : this.containerElement.firstElementChild.clientWidth;
-        const rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 2);
+        const rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 10);
         this.setState({ monthRightOffset: rightOffset });
     }
     dateChangeHandler(updater, handler) {

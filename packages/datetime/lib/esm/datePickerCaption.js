@@ -70,7 +70,7 @@ var DatePickerCaption = /** @class */ (function (_super) {
         // measure width of text as rendered inside our container element.
         var monthTextWidth = measureTextWidth(this.displayedMonthText, Classes.DATEPICKER_CAPTION_MEASURE, this.containerElement);
         var monthSelectWidth = this.containerElement == null ? 0 : this.containerElement.firstElementChild.clientWidth;
-        var rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 2);
+        var rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 10);
         this.setState({ monthRightOffset: rightOffset });
     };
     DatePickerCaption.prototype.dateChangeHandler = function (updater, handler) {

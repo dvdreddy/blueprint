@@ -4641,6 +4641,10 @@ a.bp4-button.bp4-disabled{
   margin-left:-3px;
   margin-right:7.5px;
 }
+.bp4-dialog-header .bp4-dialog-close-button.bp4-button .bp4-icon:first-child:last-child{
+  margin:0px;
+  padding:0px;
+}
 .bp4-dialog-header .bp4-heading{
   overflow:hidden;
   text-overflow:ellipsis;

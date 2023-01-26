@@ -110,6 +110,13 @@ $dialog-padding: $pt-grid-size * 1.5 !default;
     margin-right: $dialog-padding * 0.5;
   }
 
+  .#{$ns}-dialog-close-button.#{$ns}-button {
+      .#{$ns}-icon:first-child:last-child {
+          margin: 0px;
+          padding: 0px;
+      }
+  }
+
   .#{$ns}-heading {
     @include overflow-ellipsis();
     flex: 1 1 auto;

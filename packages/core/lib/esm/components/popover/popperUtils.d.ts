@@ -4,9 +4,9 @@ export declare function getPosition(placement: PopperJS.Placement): PopperJS.Pos
 /** Returns true if position is left or right. */
 export declare function isVerticalPosition(side: PopperJS.Position): boolean;
 /** Returns the opposite position. */
-export declare function getOppositePosition(side: PopperJS.Position): "bottom" | "left" | "right" | "top";
+export declare function getOppositePosition(side: PopperJS.Position): "left" | "right" | "bottom" | "top";
 /** Returns the CSS alignment keyword corresponding to given placement. */
-export declare function getAlignment(placement: PopperJS.Placement): "left" | "right" | "center";
+export declare function getAlignment(placement: PopperJS.Placement): "center" | "left" | "right";
 /** Modifier helper function to compute popper transform-origin based on arrow position */
 export declare function getTransformOrigin(data: PopperJS.Data): string;
 /** Popper modifier that offsets popper and arrow so arrow points out of the correct side */

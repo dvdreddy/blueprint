@@ -128,7 +128,7 @@ export class DatePickerCaption extends AbstractPureComponent2<IDatePickerCaption
         );
         const monthSelectWidth =
             this.containerElement == null ? 0 : this.containerElement.firstElementChild.clientWidth;
-        const rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 2);
+        const rightOffset = Math.max(2, monthSelectWidth - monthTextWidth - IconSize.STANDARD - 10);
         this.setState({ monthRightOffset: rightOffset });
     }
 
