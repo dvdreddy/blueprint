@@ -118,7 +118,7 @@ $pt-dark-border-shadow-opacity: $pt-border-shadow-opacity * 2 !default;
 $pt-dark-drop-shadow-opacity: $pt-drop-shadow-opacity * 2 !default;
 
 // Elevations
-$pt-elevation-shadow-0: 0 0 0 1px $pt-divider-black !default;
+$pt-elevation-shadow-0: inset 0 0 0 1px $pt-divider-black !default;
 $pt-elevation-shadow-1: border-shadow($pt-border-shadow-opacity),
                         0 2px 2px rgba($black, $pt-drop-shadow-opacity) !default;
 $pt-elevation-shadow-2: border-shadow($pt-border-shadow-opacity),

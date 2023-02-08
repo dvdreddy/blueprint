@@ -7,6 +7,9 @@
 *.iws
 .idea/
 
+# AG
+.ignore
+
 # Node
 node_modules
 npm-debug.log*

@@ -197,7 +197,7 @@ $control-indicator-spacing: $pt-grid-size !default;
 
   input:focus ~ .#{$ns}-control-indicator {
     @include focus-outline();
-    outline: $blue3 solid 2px;
+    outline: $primary3 solid 2px;
   }
 
   // right-aligned indicator is glued to the right side of the container
@@ -633,7 +633,7 @@ $control-indicator-spacing: $pt-grid-size !default;
     }
 
     input:focus ~ .#{$ns}-control-indicator {
-      outline: $blue5 solid 2px;
+      outline: $primary5 solid 2px;
     }
 
     input:not(:disabled):active ~ .#{$ns}-control-indicator {

@@ -86,7 +86,7 @@ $pt-dark-intent-text-colors: (
 }
 
 @function border-shadow($alpha, $color: $black, $size: 1px) {
-  @return 0 0 0 $size rgba($color, $alpha);
+  @return inset 0 0 0 $size rgba($color, $alpha);
 }
 
 // returns the padding necessary to center text in a container of the given height.

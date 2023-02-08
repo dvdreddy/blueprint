@@ -245,7 +245,7 @@ $pt-drop-shadow-opacity: 0.2 !default;
 $pt-dark-border-shadow-opacity: 0.2 !default;
 $pt-dark-drop-shadow-opacity: 0.4 !default;
 
-$pt-elevation-shadow-0: 0 0 0 1px #e6e7e7 !default;
+$pt-elevation-shadow-0: inset 0 0 0 1px #e6e7e7 !default;
 $pt-elevation-shadow-1: 0 0 0 1px rgba(0, 19, 12, 0.1),
   0 2px 2px rgba(0, 19, 12, 0.2) !default;
 $pt-elevation-shadow-2: 0 0 0 1px rgba(0, 19, 12, 0.1),
