@@ -42,7 +42,7 @@
   .#{$ns}-code,
   .#{$ns}-running-text code {
     background: $pt-code-background-color;
-    box-shadow: inset border-shadow(0.2);
+    box-shadow: border-shadow(0.2);
     color: $pt-code-text-color;
 
     a > & {
@@ -123,7 +123,7 @@
   .#{$ns}-code,
   .#{$ns}-running-text code {
     background: $pt-dark-code-background-color;
-    box-shadow: inset border-shadow(0.4);
+    box-shadow: border-shadow(0.4);
     color: $pt-dark-code-text-color;
 
     a > & {

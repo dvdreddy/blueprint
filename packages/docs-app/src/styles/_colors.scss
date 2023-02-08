@@ -163,15 +163,15 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
   &:hover .docs-color-swatch-trigger {
     @include position-all(absolute, $swatch-hover-offset);
     border-radius: $pt-border-radius;
-    box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
-                      0 2px 4px rgba($black, $pt-drop-shadow-opacity * 50%),
-                      0 8px 24px rgba($black, $pt-drop-shadow-opacity);
+    box-shadow: border-shadow($pt-border-shadow-opacity * 2),
+                0 2px 4px rgba($black, $pt-drop-shadow-opacity * 50%),
+                0 8px 24px rgba($black, $pt-drop-shadow-opacity);
     z-index: $pt-z-index-base + 1;
   }
 
   &:active .docs-color-swatch-trigger {
     @include position-all(absolute, $swatch-hover-offset * 0.5);
-    box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
+    box-shadow: border-shadow($pt-border-shadow-opacity * 2),
                 0 1px 1px rgba($black, $pt-drop-shadow-opacity);
   }
 
@@ -179,13 +179,13 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
     border-color: rgba($white, $pt-dark-border-shadow-opacity);
 
     &:hover .docs-color-swatch-trigger {
-      box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
+      box-shadow: border-shadow($pt-dark-border-shadow-opacity, $color: $white),
                   0 2px 4px rgba($black, $pt-dark-drop-shadow-opacity * 50%),
                   0 8px 24px rgba($black, $pt-dark-drop-shadow-opacity);
     }
 
     &:active .docs-color-swatch-trigger {
-      box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
+      box-shadow: border-shadow($pt-dark-border-shadow-opacity, $color: $white),
                   0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity);
     }
   }
@@ -292,13 +292,13 @@ $bubble-size: $pt-grid-size * 2;
 
 .docs-color-bubble {
   border-radius: $pt-border-radius;
-  box-shadow: inset border-shadow(0.15);
+  box-shadow: border-shadow(0.15);
   display: inline-block;
   height: $bubble-size;
   vertical-align: middle;
   width: $bubble-size;
 
   .#{$ns}-dark & {
-    box-shadow: inset border-shadow(0.2, $white);
+    box-shadow: border-shadow(0.2, $white);
   }
 }
