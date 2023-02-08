@@ -38,6 +38,15 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         className: string;
         ref: (ref: HTMLElement | null) => HTMLElement | null;
         title: string | undefined;
+        slot?: string | undefined;
+        style?: React.CSSProperties | undefined;
+        onClick?: React.MouseEventHandler<HTMLElement> | undefined;
+        onBlur?: React.FocusEventHandler<HTMLElement> | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "true" | "false" | "grid" | "listbox" | "tree" | undefined;
+        tabIndex?: number | undefined;
+        hidden?: boolean | undefined;
+        color?: string | undefined;
+        placeholder?: string | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
         suppressContentEditableWarning?: boolean | undefined;
@@ -47,14 +56,9 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         contextMenu?: string | undefined;
         dir?: string | undefined;
         draggable?: (boolean | "true" | "false") | undefined;
-        hidden?: boolean | undefined;
         id?: string | undefined;
         lang?: string | undefined;
-        placeholder?: string | undefined;
-        slot?: string | undefined;
         spellCheck?: (boolean | "true" | "false") | undefined;
-        style?: React.CSSProperties | undefined;
-        tabIndex?: number | undefined;
         translate?: "yes" | "no" | undefined;
         radioGroup?: string | undefined;
         role?: React.AriaRole | undefined;
@@ -69,7 +73,6 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         autoCapitalize?: string | undefined;
         autoCorrect?: string | undefined;
         autoSave?: string | undefined;
-        color?: string | undefined;
         itemProp?: string | undefined;
         itemScope?: boolean | undefined;
         itemType?: string | undefined;
@@ -78,7 +81,7 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "search" | "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "text" | "search" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: boolean | "true" | "false" | undefined;
@@ -89,7 +92,7 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         'aria-colindex'?: number | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "true" | "false" | "page" | "step" | "location" | "date" | "time" | undefined;
+        'aria-current'?: boolean | "time" | "true" | "false" | "page" | "step" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: boolean | "true" | "false" | undefined;
@@ -98,7 +101,6 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         'aria-expanded'?: boolean | "true" | "false" | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: boolean | "true" | "false" | undefined;
-        'aria-haspopup'?: boolean | "true" | "false" | "dialog" | "grid" | "listbox" | "menu" | "tree" | undefined;
         'aria-hidden'?: boolean | "true" | "false" | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -128,6 +130,9 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         'aria-valuemin'?: number | undefined;
         'aria-valuenow'?: number | undefined;
         'aria-valuetext'?: string | undefined;
+        onFocus?: React.FocusEventHandler<HTMLElement> | undefined;
+        onMouseEnter?: React.MouseEventHandler<HTMLElement> | undefined;
+        onMouseLeave?: React.MouseEventHandler<HTMLElement> | undefined;
         dangerouslySetInnerHTML?: {
             __html: string;
         } | undefined;
@@ -143,9 +148,7 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         onCompositionStartCapture?: React.CompositionEventHandler<HTMLElement> | undefined;
         onCompositionUpdate?: React.CompositionEventHandler<HTMLElement> | undefined;
         onCompositionUpdateCapture?: React.CompositionEventHandler<HTMLElement> | undefined;
-        onFocus?: React.FocusEventHandler<HTMLElement> | undefined;
         onFocusCapture?: React.FocusEventHandler<HTMLElement> | undefined;
-        onBlur?: React.FocusEventHandler<HTMLElement> | undefined;
         onBlurCapture?: React.FocusEventHandler<HTMLElement> | undefined;
         onChange?: React.FormEventHandler<HTMLElement> | undefined;
         onChangeCapture?: React.FormEventHandler<HTMLElement> | undefined;
@@ -215,7 +218,6 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         onWaitingCapture?: React.ReactEventHandler<HTMLElement> | undefined;
         onAuxClick?: React.MouseEventHandler<HTMLElement> | undefined;
         onAuxClickCapture?: React.MouseEventHandler<HTMLElement> | undefined;
-        onClick?: React.MouseEventHandler<HTMLElement> | undefined;
         onClickCapture?: React.MouseEventHandler<HTMLElement> | undefined;
         onContextMenu?: React.MouseEventHandler<HTMLElement> | undefined;
         onContextMenuCapture?: React.MouseEventHandler<HTMLElement> | undefined;
@@ -239,8 +241,6 @@ export declare class Text extends AbstractPureComponent2<TextProps & Omit<React.
         onDropCapture?: React.DragEventHandler<HTMLElement> | undefined;
         onMouseDown?: React.MouseEventHandler<HTMLElement> | undefined;
         onMouseDownCapture?: React.MouseEventHandler<HTMLElement> | undefined;
-        onMouseEnter?: React.MouseEventHandler<HTMLElement> | undefined;
-        onMouseLeave?: React.MouseEventHandler<HTMLElement> | undefined;
         onMouseMove?: React.MouseEventHandler<HTMLElement> | undefined;
         onMouseMoveCapture?: React.MouseEventHandler<HTMLElement> | undefined;
         onMouseOut?: React.MouseEventHandler<HTMLElement> | undefined;

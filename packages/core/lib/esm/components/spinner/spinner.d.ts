@@ -81,7 +81,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "search" | "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "text" | "search" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: boolean | "true" | "false" | undefined;
@@ -92,7 +92,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         'aria-colindex'?: number | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "true" | "false" | "page" | "step" | "location" | "date" | "time" | undefined;
+        'aria-current'?: boolean | "time" | "true" | "false" | "page" | "step" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: boolean | "true" | "false" | undefined;
@@ -101,7 +101,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         'aria-expanded'?: boolean | "true" | "false" | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: boolean | "true" | "false" | undefined;
-        'aria-haspopup'?: boolean | "true" | "false" | "dialog" | "grid" | "listbox" | "menu" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "true" | "false" | "grid" | "listbox" | "tree" | undefined;
         'aria-hidden'?: boolean | "true" | "false" | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -317,7 +317,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         accentHeight?: string | number | undefined;
         accumulate?: "none" | "sum" | undefined;
         additive?: "replace" | "sum" | undefined;
-        alignmentBaseline?: "inherit" | "auto" | "baseline" | "middle" | "after-edge" | "alphabetic" | "before-edge" | "central" | "hanging" | "ideographic" | "mathematical" | "text-after-edge" | "text-before-edge" | undefined;
+        alignmentBaseline?: "auto" | "inherit" | "baseline" | "middle" | "after-edge" | "alphabetic" | "before-edge" | "central" | "hanging" | "ideographic" | "mathematical" | "text-after-edge" | "text-before-edge" | undefined;
         allowReorder?: "yes" | "no" | undefined;
         alphabetic?: string | number | undefined;
         amplitude?: string | number | undefined;
@@ -341,7 +341,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         clipPathUnits?: string | number | undefined;
         clipRule?: string | number | undefined;
         colorInterpolation?: string | number | undefined;
-        colorInterpolationFilters?: "inherit" | "auto" | "linearRGB" | "sRGB" | undefined;
+        colorInterpolationFilters?: "auto" | "inherit" | "linearRGB" | "sRGB" | undefined;
         colorProfile?: string | number | undefined;
         colorRendering?: string | number | undefined;
         contentScriptType?: string | number | undefined;
@@ -374,7 +374,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         filterUnits?: string | number | undefined;
         floodColor?: string | number | undefined;
         floodOpacity?: string | number | undefined;
-        focusable?: (boolean | "true" | "false") | "auto" | undefined;
+        focusable?: "auto" | (boolean | "true" | "false") | undefined;
         fontFamily?: string | undefined;
         fontSize?: string | number | undefined;
         fontSizeAdjust?: string | number | undefined;
@@ -565,7 +565,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         'aria-colindex'?: number | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "true" | "false" | "page" | "step" | "location" | "date" | "time" | undefined;
+        'aria-current'?: boolean | "time" | "true" | "false" | "page" | "step" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: boolean | "true" | "false" | undefined;
@@ -574,7 +574,7 @@ export declare class Spinner extends AbstractPureComponent2<SpinnerProps> {
         'aria-expanded'?: boolean | "true" | "false" | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: boolean | "true" | "false" | undefined;
-        'aria-haspopup'?: boolean | "true" | "false" | "dialog" | "grid" | "listbox" | "menu" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "true" | "false" | "grid" | "listbox" | "tree" | undefined;
         'aria-hidden'?: boolean | "true" | "false" | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
