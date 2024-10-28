@@ -1,6 +1,14 @@
 // Copyright 2015 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
+.ic-shaded-div {
+  @import "datepicker";
+  @import "daterangepicker";
+  @import "timepicker";
+  @import "datetimepicker";
+  @import "dateinput";
+}
+
 @import "datepicker";
 @import "daterangepicker";
 @import "timepicker";
